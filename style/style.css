@@ -1,6 +1,8 @@
 html, body {
     padding: 0; margin: 0;
+}
 
+body, main {
     display: flex; flex-direction: column-reverse;
 }
 
@@ -12,7 +14,7 @@ body {
             var(--d) 
             var(--d), 
         
-        #f061022d calc(var(--d) - 1px), 
+        #f0610246 calc(var(--d) - 1px), 
         #0000 var(--d)
     ) 
     0 0 / 25px 25px;
@@ -23,6 +25,10 @@ body {
     font-family: 'Montserrat';
 }
 
+a {
+    text-decoration: none; color: inherit;
+}
+
 /* Les fonts */
 
 @font-face {
@@ -30,4 +36,79 @@ body {
     src: url('Montserrat.ttf');
 }
 
+/*  */
+/* Les textures */
+.liquidGlass {
+    background: linear-gradient(314deg,rgba(255, 207, 162, 0.096) 0%, rgba(255, 102, 0, 0.103) 48%, rgba(255, 191, 128, 0.055) 100%); border: 1px solid rgba(255, 229, 199, 0.65);
+    backdrop-filter: blur(8px);  box-shadow: 0 1dvh 2dvh #ff782915;
+
+    padding: 1.5%; border-radius: 5dvh;
+    font-weight: bold;
+}
+/*  */
+
+/* Elements */
+.separator {
+    width: 100%;
+    display: flex; flex-direction: row; justify-content: center; align-items: center;
+    font-size: 1.2rem;
+}
+
+.separator hr {
+    width: 100%; height: 1%;
+    border: 2px solid orange; border-radius: 5dvh;
+    margin: 1%;
+}
+
+.progressBar {
+    width: .5%; height: 100dvh;
+    position: fixed; left: 0; bottom: 0;
+    border-radius: 5dvh;
+    background-color: orange;
+}
+/*  */
+/* Nav */
+header {
+    position: fixed; bottom: 0;
+    width: 100%;
+    padding: 0 5% 5% 5%;
+    display: flex; justify-content: right; align-items: center;
+    
+    color: #fbf6f2;
+}
+header > img {
+    width: 15dvh; height: 15dvh;
+    position: fixed;
+    top :0; left: 0;
+}
+nav {
+    width: 35%;
+    color: orange;
+    display: flex; justify-content: space-between;
+}
+
+/*  */
+
+/* Index.html */
+
+main {
+    padding: 10%;
+}
+
+main > section {
+    padding: 5%; margin: 1% 0;
+    color: orange;
+}
+
+main h2 {
+    color: #fbf6f2; background-color: orange;
+    font-size: 5rem; font-weight: 900;
+}
+main span {
+    font-weight: bold;
+}
+
+main p {
+    font-size: 1.8rem
+}
 /*  */
