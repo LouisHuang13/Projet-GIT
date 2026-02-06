@@ -1,0 +1,33 @@
+html, body {
+    padding: 0; margin: 0;
+
+    display: flex; flex-direction: column-reverse;
+}
+
+body {
+    --d: 2px; 
+   
+    background : radial-gradient(
+        circle at 
+            var(--d) 
+            var(--d), 
+        
+        #f061022d calc(var(--d) - 1px), 
+        #0000 var(--d)
+    ) 
+    0 0 / 25px 25px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+/* Les fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat.ttf');
+}
+
+/*  */
