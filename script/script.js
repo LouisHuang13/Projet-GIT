@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", ()=>{
     const p = document.querySelector('.progressBar');
     const logo = document.getElementById('logo');
