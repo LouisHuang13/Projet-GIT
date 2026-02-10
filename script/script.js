@@ -1,7 +1,8 @@
-const p = document.querySelector('.progressBar');
-const logo = document.getElementById('logo');
-const maxLogoMove = 1000; // px — distance maximale que le logo montera
-if (p) {
+document.addEventListener("DOMContentLoaded", ()=>{
+    const p = document.querySelector('.progressBar');
+    const logo = document.getElementById('logo');
+    const maxLogoMove = 1000; // px — distance maximale que le logo montera
+
     const set = () => {
         const s = window.scrollY;
         const max = document.documentElement.scrollHeight - window.innerHeight;
@@ -17,4 +18,23 @@ if (p) {
     set();
     window.addEventListener('scroll', set, { passive: true });
     window.addEventListener('resize', set);
+
+    
+});
+
+var options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0,
+};
+function AskLocation(){
+    navigator.geolocation.getCurrentPosition(successGeoLoc, errorGeoLoc, options);
+}
+
+function successGeoLoc(pos){
+    window.open("https://www.google.com/maps/search/escalade/@"+pos.coords.latitude+","+ pos.coords.longitude, "_blank");
+}
+
+function errorGeoLoc(error){
+    console.log(error);
 }

@@ -120,7 +120,7 @@ main p {
     margin: 3% auto;
 }
 
-#heroSection a {
+#heroSection button {
     width: 100%;
 
     border: 3px solid orange; border-radius: 5dvh;
@@ -129,6 +129,7 @@ main p {
     transition: 1s;
 }
 
-#heroSection a:hover {
+#heroSection button:hover {
     background-color: orange; color: #FBFBF2;
+    cursor: pointer;
 }
