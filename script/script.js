@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", ()=>{
     const p = document.querySelector('.progressBar');
     const logo = document.getElementById('logo');
@@ -17,9 +19,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     };
     set();
     window.addEventListener('scroll', set, { passive: true });
-    window.addEventListener('resize', set);
-
-    
+    window.addEventListener('resize', set); 
 });
 
 var options = {
