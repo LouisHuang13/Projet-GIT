@@ -1,4 +1,7 @@
+
+
 document.addEventListener("DOMContentLoaded", ()=>{
+    window.scrollTo(0, document.body.scrollHeight);
     const p = document.querySelector('.progressBar');
     const logo = document.getElementById('logo');
     const maxLogoMove = 1000; // px — distance maximale que le logo montera
