@@ -46,7 +46,6 @@ a {
     font-weight: bold;
 }
 /*  */
-
 /* Elements */
 .separator {
     width: 100%;
@@ -82,7 +81,7 @@ header > img {
     top :0; left: 0;
 }
 nav {
-    width: 50%;
+    width: 40%;
     color: orange;
     display: flex; justify-content: space-between;
 }
