@@ -3,7 +3,7 @@ html, body {
 }
 
 body, main {
-    display: flex; flex-direction: column-reverse;
+    display: flex; flex-direction: column-reverse; justify-content: center; align-items: center;
 }
 
 body {
@@ -66,6 +66,18 @@ a {
     background-color: orange;
 }
 /*  */
+
+@keyframes upward {
+    0% {
+        transform: scaleY(2);
+    }
+    50%{
+        transform: scaleY(2) translateX(100%);
+    }
+    100% {
+        transform: scaleY(2);
+    }
+}
 /* Nav */
 header {
     position: fixed; bottom: 0;
@@ -75,7 +87,7 @@ header {
     
     color: #fbf6f2;
 }
-header > img {
+header > a > img {
     width: 15dvh; height: 15dvh;
     position: fixed;
     top :0; left: 0;
@@ -124,11 +136,20 @@ main p {
 
     border: 3px solid orange; border-radius: 5dvh;
     padding: 1.5% 5%;
-    font-size: 2rem; font-weight: bold;
+    font-size: 2rem; font-weight: bold; color: orange; background: transparent;
     transition: 1s;
 }
 
 #heroSection button:hover {
     background-color: orange; color: #FBFBF2;
     cursor: pointer;
+}
+
+/*  */
+
+#animationUpward {
+    color: orange;
+    rotate: -90deg; transform: scaleY(2);
+
+    animation: upward 2s infinite forwards ease-in-out;
 }
